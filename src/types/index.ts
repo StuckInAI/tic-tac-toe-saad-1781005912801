@@ -4,6 +4,14 @@ export type Board = Cell[];
 
 export type GameStatus = 'playing' | 'won' | 'draw';
 
+export type FilterType = 'all' | 'active' | 'completed';
+
+export type Todo = {
+  id: string;
+  text: string;
+  completed: boolean;
+};
+
 export type GameState = {
   board: Board;
   currentPlayer: Player;
