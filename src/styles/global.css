@@ -1,0 +1,57 @@
+/* CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Design Tokens */
+:root {
+  --color-bg: #0f0e17;
+  --color-surface: #1a1a2e;
+  --color-surface-2: #16213e;
+  --color-border: #2a2a4a;
+  --color-primary: #7c3aed;
+  --color-primary-light: #a78bfa;
+  --color-secondary: #06b6d4;
+  --color-secondary-light: #67e8f9;
+  --color-x: #f472b6;
+  --color-x-dark: #ec4899;
+  --color-o: #34d399;
+  --color-o-dark: #10b981;
+  --color-text: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  --color-win: #fbbf24;
+  --color-win-bg: rgba(251, 191, 36, 0.15);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --shadow-glow-x: 0 0 20px rgba(244, 114, 182, 0.4);
+  --shadow-glow-o: 0 0 20px rgba(52, 211, 153, 0.4);
+  --shadow-glow-primary: 0 0 30px rgba(124, 58, 237, 0.3);
+  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --transition: 150ms ease;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}

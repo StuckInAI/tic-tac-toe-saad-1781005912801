@@ -1,0 +1,67 @@
+.cell {
+  aspect-ratio: 1;
+  background: var(--color-surface-2);
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition), border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.cellEmpty:hover {
+  background: rgba(124, 58, 237, 0.1);
+  border-color: var(--color-primary);
+  transform: scale(1.04);
+}
+
+.cellX {
+  border-color: var(--color-x-dark);
+  background: rgba(244, 114, 182, 0.08);
+}
+
+.cellO {
+  border-color: var(--color-o-dark);
+  background: rgba(52, 211, 153, 0.08);
+}
+
+.cellWinning {
+  background: var(--color-win-bg) !important;
+  border-color: var(--color-win) !important;
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+  animation: pulse 1s ease infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+
+.symbol {
+  width: 55%;
+  height: 55%;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.cellX .symbol {
+  stroke: var(--color-x);
+  filter: drop-shadow(0 0 6px var(--color-x));
+}
+
+.cellO .symbol {
+  stroke: var(--color-o);
+  filter: drop-shadow(0 0 6px var(--color-o));
+}
+
+.cellWinning.cellX .symbol {
+  stroke: var(--color-win);
+  filter: drop-shadow(0 0 8px var(--color-win));
+}
+
+.cellWinning.cellO .symbol {
+  stroke: var(--color-win);
+  filter: drop-shadow(0 0 8px var(--color-win));
+}

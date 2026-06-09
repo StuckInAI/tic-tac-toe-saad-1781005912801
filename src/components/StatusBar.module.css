@@ -1,0 +1,43 @@
+.statusBar {
+  width: 100%;
+  max-width: 360px;
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.statusX {
+  border-color: var(--color-x-dark);
+  box-shadow: 0 0 12px rgba(244, 114, 182, 0.2);
+}
+
+.statusO {
+  border-color: var(--color-o-dark);
+  box-shadow: 0 0 12px rgba(52, 211, 153, 0.2);
+}
+
+.statusDraw {
+  border-color: var(--color-win);
+  box-shadow: 0 0 12px rgba(251, 191, 36, 0.2);
+}
+
+.message {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.statusX .message {
+  color: var(--color-x);
+}
+
+.statusO .message {
+  color: var(--color-o);
+}
+
+.statusDraw .message {
+  color: var(--color-win);
+}
